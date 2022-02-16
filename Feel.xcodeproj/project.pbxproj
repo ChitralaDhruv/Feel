@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D37DC572E9CC84974BD2BB /* Pods_Feel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD99BD9BE6C198655541C929 /* Pods_Feel.framework */; };
 		6405950127497C0E00ACE615 /* firstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405950027497C0E00ACE615 /* firstVC.swift */; };
 		6405950327497C9400ACE615 /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405950227497C9400ACE615 /* secondVC.swift */; };
 		6405950527497CD400ACE615 /* feelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405950427497CD400ACE615 /* feelVC.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46E18952B6AAC75123421701 /* Pods-Feel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feel.release.xcconfig"; path = "Target Support Files/Pods-Feel/Pods-Feel.release.xcconfig"; sourceTree = "<group>"; };
 		6405950027497C0E00ACE615 /* firstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstVC.swift; sourceTree = "<group>"; };
 		6405950227497C9400ACE615 /* secondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
 		6405950427497CD400ACE615 /* feelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feelVC.swift; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		64E825892735D46C004737D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E8258B2735D46C004737D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64FBD086275C06BD00BD2B4B /* feedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
+		EAF79167182F67C82B4C7914 /* Pods-Feel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feel.debug.xcconfig"; path = "Target Support Files/Pods-Feel/Pods-Feel.debug.xcconfig"; sourceTree = "<group>"; };
+		FD99BD9BE6C198655541C929 /* Pods_Feel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Feel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,12 +48,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D37DC572E9CC84974BD2BB /* Pods_Feel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390668636392A113AAC151D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD99BD9BE6C198655541C929 /* Pods_Feel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		641990CB27A7AD78001C7995 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +85,8 @@
 				641990CE27B1146C001C7995 /* Packages */,
 				64E8257C2735D46B004737D0 /* Feel */,
 				64E8257B2735D46B004737D0 /* Products */,
+				BBD5C5C51888C39B5A465B4A /* Pods */,
+				390668636392A113AAC151D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +142,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BBD5C5C51888C39B5A465B4A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAF79167182F67C82B4C7914 /* Pods-Feel.debug.xcconfig */,
+				46E18952B6AAC75123421701 /* Pods-Feel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E8258E2735D46C004737D0 /* Build configuration list for PBXNativeTarget "Feel" */;
 			buildPhases = (
+				096E0970A9EA8C7B003DFE22 /* [CP] Check Pods Manifest.lock */,
 				64E825762735D46B004737D0 /* Sources */,
 				64E825772735D46B004737D0 /* Frameworks */,
 				64E825782735D46B004737D0 /* Resources */,
+				B82686297243B15F46794182 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096E0970A9EA8C7B003DFE22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Feel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82686297243B15F46794182 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feel/Pods-Feel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Feel/Pods-Feel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Feel/Pods-Feel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64E825762735D46B004737D0 /* Sources */ = {
@@ -342,6 +411,7 @@
 		};
 		64E8258F2735D46C004737D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF79167182F67C82B4C7914 /* Pods-Feel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -369,6 +439,7 @@
 		};
 		64E825902735D46C004737D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E18952B6AAC75123421701 /* Pods-Feel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
