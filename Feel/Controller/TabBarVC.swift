@@ -24,7 +24,7 @@ class TabBarVC: UITabBarController{
         UITabBar.appearance().barTintColor = .systemBackground
         
         setViewControllers([vc1,vc2,vc3,vc4,vc5], animated: false)
-    
+        self.selectedIndex = 2
         modalPresentationStyle = .fullScreen
         
         guard let items = tabBar.items else {
@@ -38,6 +38,7 @@ class TabBarVC: UITabBarController{
         items[4].image = UIImage(systemName: "person.circle.fill")
         
     }
+    
     
 }
     

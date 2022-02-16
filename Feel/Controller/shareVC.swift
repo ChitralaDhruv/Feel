@@ -14,7 +14,4 @@ class shareVC: UIViewController {
 
         self.view.backgroundColor = .orange
     }
-    
-
-
 }

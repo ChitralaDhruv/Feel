@@ -12,11 +12,13 @@
 		6405950527497CD400ACE615 /* feelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405950427497CD400ACE615 /* feelVC.swift */; };
 		6405950727497CF900ACE615 /* shareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405950627497CF900ACE615 /* shareVC.swift */; };
 		6405950927497D2000ACE615 /* fifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6405950827497D2000ACE615 /* fifthVC.swift */; };
+		641990CD27A7AD9F001C7995 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641990CC27A7AD9F001C7995 /* Extensions.swift */; };
 		648735E627475D0800F6B5E2 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648735E527475D0700F6B5E2 /* TabBarVC.swift */; };
 		64E8257E2735D46B004737D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8257D2735D46B004737D0 /* AppDelegate.swift */; };
 		64E825802735D46B004737D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8257F2735D46B004737D0 /* SceneDelegate.swift */; };
 		64E825872735D46C004737D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E825862735D46C004737D0 /* Assets.xcassets */; };
 		64E8258A2735D46C004737D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E825882735D46C004737D0 /* LaunchScreen.storyboard */; };
+		64FBD087275C06BD00BD2B4B /* feedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FBD086275C06BD00BD2B4B /* feedbackVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		6405950427497CD400ACE615 /* feelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feelVC.swift; sourceTree = "<group>"; };
 		6405950627497CF900ACE615 /* shareVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shareVC.swift; sourceTree = "<group>"; };
 		6405950827497D2000ACE615 /* fifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthVC.swift; sourceTree = "<group>"; };
+		641990CC27A7AD9F001C7995 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		641990CF27B1146C001C7995 /* JTAppleCalendar-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "JTAppleCalendar-master"; path = "../../Downloads/JTAppleCalendar-master"; sourceTree = "<group>"; };
 		648735E527475D0700F6B5E2 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		64E8257A2735D46B004737D0 /* Feel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E8257D2735D46B004737D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,7 @@
 		64E825862735D46C004737D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E825892735D46C004737D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E8258B2735D46C004737D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64FBD086275C06BD00BD2B4B /* feedbackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +50,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641990CB27A7AD78001C7995 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				641990CC27A7AD9F001C7995 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		641990CE27B1146C001C7995 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				641990CF27B1146C001C7995 /* JTAppleCalendar-master */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		64E825712735D46B004737D0 = {
 			isa = PBXGroup;
 			children = (
+				641990CE27B1146C001C7995 /* Packages */,
 				64E8257C2735D46B004737D0 /* Feel */,
 				64E8257B2735D46B004737D0 /* Products */,
 			);
@@ -64,6 +86,7 @@
 		64E8257C2735D46B004737D0 /* Feel */ = {
 			isa = PBXGroup;
 			children = (
+				641990CB27A7AD78001C7995 /* Extension */,
 				64E825932735D4AF004737D0 /* Model */,
 				64E825922735D4A6004737D0 /* View */,
 				64E825912735D489004737D0 /* Controller */,
@@ -85,6 +108,7 @@
 				6405950427497CD400ACE615 /* feelVC.swift */,
 				6405950627497CF900ACE615 /* shareVC.swift */,
 				6405950827497D2000ACE615 /* fifthVC.swift */,
+				64FBD086275C06BD00BD2B4B /* feedbackVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,8 +202,10 @@
 				6405950927497D2000ACE615 /* fifthVC.swift in Sources */,
 				6405950327497C9400ACE615 /* secondVC.swift in Sources */,
 				648735E627475D0800F6B5E2 /* TabBarVC.swift in Sources */,
+				641990CD27A7AD9F001C7995 /* Extensions.swift in Sources */,
 				6405950127497C0E00ACE615 /* firstVC.swift in Sources */,
 				64E825802735D46B004737D0 /* SceneDelegate.swift in Sources */,
+				64FBD087275C06BD00BD2B4B /* feedbackVC.swift in Sources */,
 				6405950727497CF900ACE615 /* shareVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

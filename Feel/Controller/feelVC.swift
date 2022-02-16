@@ -30,13 +30,21 @@ class feelVC: UIViewController {
     }()
     
     private let startButton: UIButton = {
-        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
-        button.setTitle("START", for: .normal)
-        button.backgroundColor = .white
-        button.setTitleColor(.black, for: .normal)
+        let but = UIButton()
+        but.frame.size = CGSize(width: 200, height: 100)
+        but.configure(cornerRadius: 0.0, backgroundColor: .black)
+        if let fingerprint = UIImage(named: "fingerprint") {
+            but.configure(icon: fingerprint, color: .black)
+        }
+        but.configure(color: .black, font: UIFont.boldSystemFont(ofSize: 12))
+        but.setTitle("Start", for: .normal)
+        but.setTitleColor(.red, for: .normal)
 
-        return button
+        return but
     }()
+    
+    
+    
     
     private func setUpAutoLayout() {
         startButton.center = view.center
